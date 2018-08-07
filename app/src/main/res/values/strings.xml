@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RandomLettery</string>
+    <string name="Add">Add Data</string>
+    <string name="Start">Start</string>
+    <string name="ClearData">Clear</string>
+    <string name="addData">Add what you want!!</string>
+</resources>
