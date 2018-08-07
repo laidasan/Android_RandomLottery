@@ -11,8 +11,9 @@
     <EditText
         android:id="@+id/addData"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:hint="@string/addData"
+        android:layout_weight="0.8"
         android:ems="15"/>
 
     <LinearLayout
@@ -20,7 +21,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="0dp"
         android:layout_marginTop="16dp"
-        android:layout_weight="4"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:paddingBottom="0dp"
         android:paddingLeft="5dp"
@@ -31,7 +32,6 @@
             android:id="@+id/Add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
             android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:onClick="onClickAdd"
@@ -42,7 +42,6 @@
             android:id="@+id/clearData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
             android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:onClick="onClickClear"
@@ -53,7 +52,6 @@
             android:id="@+id/Start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
             android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:onClick="onClickLettery"
@@ -64,20 +62,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
         android:layout_marginTop="10dp"
         android:paddingTop="0dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:paddingBottom="250dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/DataView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal|top"
             android:text="YOUR DATA"
             android:textAppearance="@android:style/TextAppearance.Large" />
     </LinearLayout>
