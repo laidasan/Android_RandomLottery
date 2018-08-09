@@ -20,8 +20,8 @@ public class LetteryActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lettery);
-        String[] data = {"JJ","KK","YY"};
-        datas.addAll(Arrays.asList(data));
+        //String[] data = {"JJ","KK","YY"};
+        //datas.addAll(Arrays.asList(data));
         startLettery();
 
     }
@@ -31,6 +31,7 @@ public class LetteryActivity extends Activity {
         //確認不再 run Lottery 與 加入的不是空字串的時候才可以加入樂透資料裡面
         if(!wasrunning && !editText.getText().toString().matches("")){
             datas.add(editText.getText().toString());
+            editText.setText("");
         }
 
     }
